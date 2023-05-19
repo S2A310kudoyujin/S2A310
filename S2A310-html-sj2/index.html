@@ -86,26 +86,26 @@
             <div class="about=list"></div>
             <table>
               <tr>
-                <td>名前</td>
+                <th>名前</th>
                 <td>工藤 雄心</td>
               </tr>
               <tr>
-                <td>趣味</td>
+                <th>趣味</th>
                 <td>歌を歌う、筋トレ、ドライブ</td>
               </tr>
               <tr>
-                <td>アルバイト</td>
+                <th>アルバイト</th>
                 <td>マックで働いてます</td>
               </tr>
               <tr>
-                <td>部活動</td>
+                <th>部活動</th>
                 <td>帰宅部</td>
               </tr> <tr>
-                <td>自己啓発</td>
+                <th>自己啓発</th>
                 <td>資格取得</td>
               </tr>
               <tr>
-                <td>信条</td>
+                <th>信条</th>
                 <td>推しはいたほうがいい。</td>
               </tr>
             </div>
@@ -185,14 +185,45 @@
             <div class="box-row">
               <div><img src="portfolio/img/IMG_0155.jpeg" /></div>
               <div><img src="portfolio/img/IMG_0156.jpeg" /></div>
-              <div><img src="portfolio/img/IMG_0158.jpeg" /></div>
+              <div><img src="portfolio\img\IMG_0158.jpeg" /></div>
             </div>
           </div>
+<!---/form-->
         </section>
         <div class="page-top" id="js-page-top">
           <span class="material-icons-outlined">Page Top</span>
         </div>
       </main>
+      <form action="#">
+      <div class="contact-form">
+        <div class="contact-item">
+          <p class="form-title">学籍番号<span class="must">必須</span></p>
+          <input type="number" name="studentid" />
+        </div>
+        <div class="contact-item">
+          <p class="form-title">氏名<sapan class="must">必須</sapan></p>
+          <input type="text" name="username" />
+        </div>
+
+        <div class="contact-item">
+          <p class="form-title">メール<sapan class="must">必須</sapan></p>
+          <input type="email" name="mail" />
+        </div>
+        <div class="contact-item">
+          <p class="form-title">電話番号<sapan class="must">必須</sapan></p>
+          <input type="tel" name="tel" />
+        </div>
+
+        <div class="contact-item">
+          <p class="form-title">お問い合わせ</p>
+          <textarea name="remarks" cols="40" rows="4" maxlength="40"></textarea>
+        </div>
+        <br />
+        <div class="bth" type="subject" onclick="alert('sendnow!'); return false;" value="登録">
+          <input class="btn" type="reset" value="送信" />
+        </div>
+      </div>
+    </form>
       <!-- footer -->
       <footer class="footer">
         <div class="copyright">&copy; HCS システムエンジニア科.</div>
